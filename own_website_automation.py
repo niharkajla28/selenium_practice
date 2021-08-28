@@ -3,7 +3,7 @@ from selenium import webdriver
 if __name__ == '__main__':
     chrome_browser = webdriver.Chrome('chromedriver.exe')
     chrome_browser.maximize_window()
-    for item in range(1000):
+    for item in range(100):
         chrome_browser.get('http://nihark.pythonanywhere.com/contact.html')
         # chrome_browser.implicitly_wait(5)
         email_input = chrome_browser.find_element_by_id('email')
